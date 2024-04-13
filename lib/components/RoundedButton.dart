@@ -4,7 +4,7 @@ class RoundedButton extends StatelessWidget {
   final String title;
   final Color color;
   final Function onPressed;
-  RoundedButton({
+  const RoundedButton({super.key, 
     required this.title,
     required this.color,
     required this.onPressed,
@@ -24,7 +24,7 @@ class RoundedButton extends StatelessWidget {
           height: 42.0,
           child: Text(
             title,
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
           ),
         ),
       ),
